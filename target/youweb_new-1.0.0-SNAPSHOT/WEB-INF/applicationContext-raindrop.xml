@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="raindropFactoryBean1" class="com.b5m.tao.service.raindrop.RaindropFactoryBean">
+		<property name="factoryConfig">
+			<bean class="com.b5m.raindrop.tao.client.metaq.FactoryConfig">
+				<!-- Metaq的ZooKeeper的主机地址 -->
+				<constructor-arg index="0" value="10.10.100.1:12181"></constructor-arg>
+				
+				<!-- Metaq监听的Topic的名称 -->
+				<property name="topicName" value="you_count"></property>
+				<!-- 消息生产者发送到消息队列的相应的超时时间 -->
+				<property name="sendTimeout" value="3000"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="counterService1"
+		class="com.b5m.raindrop.tao.client.ICounterService"
+		factory-bean="raindropFactoryBean1"
+		factory-method="createCounterService">
+	</bean>
+	
+	<bean id="raindropFactoryBean2" class="com.b5m.tao.service.raindrop.RaindropFactoryBean">
+		<property name="factoryConfig">
+			<bean class="com.b5m.raindrop.tao.client.metaq.FactoryConfig">
+				<!-- Metaq的ZooKeeper的主机地址 -->
+				<constructor-arg index="0" value="10.10.100.1:12181"></constructor-arg>
+				
+				<!-- Metaq监听的Topic的名称 -->
+				<property name="topicName" value="hotel_count"></property>
+				<!-- 消息生产者发送到消息队列的相应的超时时间 -->
+				<property name="sendTimeout" value="3000"></property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="counterService2"
+		class="com.b5m.raindrop.tao.client.ICounterService"
+		factory-bean="raindropFactoryBean2"
+		factory-method="createCounterService">
+	</bean>
+
+	<!-- <bean id="taoGoodsServiceRaindrop" class="com.b5m.tao.service.raindrop.TaoGoodsServiceRaindrop">
+		<constructor-arg index="0" ref="counterService"></constructor-arg>
+	</bean> -->
+</beans>

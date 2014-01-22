@@ -1,0 +1,170 @@
+.layout{margin:0 auto;width:980px}
+/*crumb*/
+#crumb{height:29px;background:url(../../images/you/bg_10_02.gif) repeat-x center;margin:15px 0 0}
+#crumb .inner{float:left;background:#fff url(../../images/you/d_spr.png) no-repeat -322px -153px;padding:0 15px 0 38px;height:29px;line-height:29px;font-size:14px;overflow:hidden}
+#crumb .inner a,#crumb .inner b,#crumb .inner span{float:left}
+#crumb .inner a{color:#333}
+#crumb .inner b{font-family:\5b8b\4f53;color:#999;font-weight:400;padding:0 5px}
+#crumb .inner span{color:#999}
+
+.keyWord{float:right;height:100%;background-color:#fff;line-height:29px;}
+.keyWord a,.indexKeyWord a{color: #999;display: inline-block;padding: 0 0 0 20px;}
+.keyWord a:hover,.indexKeyWord a:Hover{text-decoration:underline;color:#333;}
+.words a.ico_hot,.indexKeyWord a.ico_hot,.keyWord a.ico_hot{position:relative;z-index:0;color:#f82244}
+.ico_hot s{position:absolute;bottom:77%;left:100%;z-index:1;width:22px;height:14px;padding-left:25px;background:url(../../images/you/hot.gif) no-repeat;}
+/* 酒店详情页面返利标记 */
+.flag-rebate{position: relative; top: -25px; left: -10px; color: #fff; background-color: #F87348; border-radius: 2px; font-size: 14px;}
+
+/*fixed-price*/
+.fixed-price{height:80px;margin:20px 0 0;line-height:80px;overflow:hidden}
+.fixed-price .old,.fixed-price .now{float:left;width:558px;padding:0 20px}
+.fixed-price .old{border:1px solid #84c3b2;background:#e8fff7;border-right:none;height:78px;line-height:78px;font-size:14px;color:#999}
+.fixed-price .now{background:#6bb5a8;height:80px}
+.fixed-price .old .num{float:left;height:78px}
+.fixed-price .old .num b{color:#c33;font-size:30px;padding:0 5px}
+.fixed-price .old .price{float:right}
+.fixed-price .old .price del{text-decoration:line-through;padding:0 0 0 40px}
+.fixed-price .old .price em{padding:0 5px 0 0;font-family:arial;font-size:14px}
+.fixed-price .now .price{float:left;height:80px;color:#fff}
+.fixed-price .now .price strong{font-size:42px;font-weight:400;padding:0 10px}
+.fixed-price .now .price em{padding:0 5px 0 0;font-family:arial;font-size:24px}
+.fixed-price .now .btn{float:right;background:url(../../images/you/d_spr.png) no-repeat -85px 0;width:206px;height:57px;text-indent:-99em;margin:12px 0 0;box-shadow:2px 2px 3px rgba(0,0,0,0.1);overflow:hidden}
+.fixed-price .now .btn:hover{background-position:-85px -58px}
+
+
+/* load-page */
+.load-h3{height:46px;width:100%;background:url(../../images/you/load-h3.jpg) repeat-x;margin-top:10px}
+.load-h3 span{display:block;height:100%;font:bold 24px/46px 'Microsoft Yahei';color:#000;text-indent:40px;background:url(../../images/you/load-h3.jpg) no-repeat 0 -47px}
+.slideCont{overflow:hidden;_zoom:1}
+.slideCont a{display:inline;float:left}
+.load-slider{position:relative;z-index:1;width:100%;height:400px;overflow:hidden;}
+.load-slider .slider-item,.load-slider .slider-item img{width:1200px;height:400px;}
+.load-slider .slider-item{display:block;/*position:absolute;left:0;top:0;z-index:0*/}
+.load-slider .a1{z-index:1}
+.load-slider ul{bottom:10px;left:5px;z-index:10;position:absolute;width:550px;height:70px;}
+.load-slider ul li{width:100px;height:70px;margin:0 0 0 10px;float:left;_display:inline}
+.load-slider ul li img{width:96px;height:66px;border:2px solid #69b2a1;}
+.load-slider ul li a{display:block;width:100%;height:100%}
+.load-slider ul li a:hover img,.load-slider ul li.cur img{width:90px;height:60px;border:5px solid white;display:block}
+.load-slider2{width:100%;overflow:hidden}
+.load-slider2 .tab{background-image:url(../../images/you/slider2-head.png);background-repeat:no-repeat;background-position:0 -150px;height:90px;}
+.load-slider2 .tab span{width: 70px;float:left;_display:inline;padding-top: 40px;}
+.load-slider2-tab1{margin-left:294px;}
+.load-slider2-tab2{margin-left:220px}
+.load-slider2-tab3{margin-left:216px}
+.load-slider2 .tab span strong{font:bold 24px/150% 'Microsoft Yahei';color:#999;float:left;padding:10px 5px 0;}
+.load-slider2 .tab span.cur{background:url(../../images/you/slider2-head.png) no-repeat 0 -73px;}
+.load-slider2 .tab span.cur strong{color:#000;}
+.load-slider2 .tab span em{font:bold 12px/150% 'Microsoft Yahei';color:#999;margin-top:25px;float:left}
+.tab-cont{/*width:968px;*/position:relative;height:240px;border:1px solid #ccc;background-color:white;padding:5px;overflow:hidden}
+.tab-cont li{width:100%;overflow:hidden;margin-bottom:10px}
+.tab-cont .pic{width:658px;float:left}
+.tab-cont .pic a{position:relative;z-index:0;float:left;margin:0 1px 1px 0;_display:inline;position:relative;text-decoration:none;_zoom:1}
+.tab-cont .pic a img{display:block;position:relative;z-index:1}
+.tab-cont .pic span{float:left;width:211px}
+.tab-cont .pic a s{display:none;position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;padding:8px 16px;background:#000;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=65);background:rgba(0,0,0,0.5);color:#fff;text-decoration:none;}
+.tab-cont .pic a:hover s{display:block;}
+.tab-cont .intro{display:inline;float:right;width:492px;margin-right:18px;font-family:SimSun;}
+.tab-cont .intro .tit{display:block;padding:24px 0 0;height:40px;}
+.tab-cont .intro .tit strong{font-size:14px;font-weight:bold;color:#666;float:left}
+.tab-cont .intro .tit a{float:right;color:#666;text-decoration:none}
+.tab-cont .intro .tit a:hover{color:black;text-decoration:underline;}
+.tab-cont .intro .txt{line-height:22px;color:#666}
+
+.load-mod{clear:both;margin-top:12px;width:100%;overflow:hidden;}
+.load-mod .mod-l{float:left;width:876px;}
+.load-mod .mod-l h4,.load-mod .mod-r h4{height:42px;background:url(../../images/you/bg_10_02.gif) repeat-x center #fff;overflow:hidden;width:100%;clear:both;position:relative;z-index:2}
+.load-mod .mod-l h4 strong,.load-mod .mod-r h4 strong{width:176px;height:100%;float:left;font:normal 18px/42px 'Microsoft Yahei';background:url(../../images/you/news.png) no-repeat left center #fff;text-indent:57px}
+.load-mod .mod-l h4 a.more,.load-mod .mod-r h4 a.more{float:right;width:40px;background:#fff;font-size:12px;color:#666;font-family:SimSun;margin-top:11px;text-align:right}
+
+.load-news{width:100%;height:auto;margin-top:-13px;position:relative;overflow:hidden;clear:both}
+.load-news li{padding:20px 0 22px;height:157px;float:left;width:100%;overflow:hidden;border-top:1px dashed #c5c5c5}
+.load-news li .pic{display:block;width:195px;height:157px;float:left;overflow:hidden}
+.load-news li .pic img{display:block;height:100%}
+.load-news li p{float:right;width:660px;position:relative}
+.load-news li p a.tit{font:normal 18px/120% 'Microsoft Yahei';color:#6bb5a7}
+.load-news li p span.info{color:#999;font-size:12px;display:block;padding:10px 0 14px}
+.load-news li p span.intro{color:#666;font-size:14px;display:block;line-height:22px}
+.load-news li p .num{background:url(../../images/you/news-num.png) no-repeat;padding:3px 0 0 3px;;width:65px;height:45px;display:block;position:absolute;;right:5px;top:0;color:white;text-align:center;line-height:120%}
+.load-news li p .num strong{display:block;font-family:Tahoma;font-weight:bold;white-space:nowrap;width:100%;overflow:hidden}
+
+/*成都住宿推荐*/
+.load-mod .mod-l-recHotels h4 strong{background-image:url(../../images/you/hotels.png)}
+.mod-l-recHotels dl{padding-top:24px}
+.mod-l-recHotels dl,.mod-l-recHotels dd{overflow:hidden;color:#666;font-size:14px;_zoom:1}
+.mod-l-recHotels dt{padding-bottom:2px}
+.mod-l-recHotels dt a{color:#666;font-weight:bold;}
+.mod-l-recHotels dt a:hover{color:#6bb5a7}
+.mod-l-recHotels{padding-bottom:50px}
+.load-recHotels-box{margin-left:-30px;}
+.load-recHotels-bx{display:inline;position:relative;z-index:0;float:left;overflow:hidden;margin:20px 0 5px 30px}
+.load-recHotels-dDescript{line-height:160%;text-indent:2em;}
+.load-recHotels-descript,.load-recHotels-bx img,.load-recHotels-bx{height:210px;}
+.load-recHotels-bx img,.load-recHotels-bx/*,.load-recHotels-descript*/{width:314px;}
+.cur a p{display:none}
+.load-recHotels-bx a p{position:absolute;bottom:0;left:0;z-index:1;width:100%;padding:8px 0;background:#000;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=65);background:rgba(0,0,0,0.5);color:#cbcbcb;font-size:12px;line-height:16px}
+.load-recHotels-bx a p b{margin:0 18px 0 8px;color:#fff;font-weight:bold;font-size:14px}
+.load-recHotels-bx a ins{color:#fff;text-decoration:none;}
+.load-recHotels-bx a span{position:absolute;right:12px;bottom:6px;*bottom:2px;z-index:2;float:right;*padding:4px 0;color:#FFF34B;font-size:14px;font-family:Arial}
+.load-recHotels-bx a del{margin:0 2px;font-size:24px;font-family:Arial;text-decoration:none}
+
+
+
+.load-recHotels-descript{/*display:none;*/position:absolute;right:0;bottom:100%;left:0;z-index:1;width:274px;padding:0 20px;background:#000;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=65);background:rgba(0,0,0,0.5);color:#f0f0f0;font-size:12px;line-height:110%}
+.cur .load-recHotels-descript{display:block}
+.load-recHotels-descript .tit{display:block;padding:27px 0 14px;color:#FFF34B;font-weight:bold;font-size:14px}
+.load-recHotels-descript .content{padding-top:10px;color:#fff;line-height:180%;}
+.load-recHotels-descript .link{position:absolute;right:24px;bottom:21px;z-index:1;color:#fff44c;font-size:14px;white-space:nowrap;text-align:right}
+.load-recHotels-descript .link span{line-height:14px;font-family:Arial;vertical-align:-4px;*vertical-align:0;}
+.load-recHotels-descript .link del{margin:0 2px;font-size:36px;text-decoration:none}
+.load-recHotels-descript .link a,.load-sDetailLink,.load-sDetail{display:inline-block;margin-left:28px;padding:6px 12px;background:#fff44c;color:#930;font-weight:bold;font-size:14px;font-family:"Microsoft Yahei",SimHei;line-height:16px;text-decoration:none;}
+.load-recHotels-descript .link a:hover,.load-sDetailLink:hover,.load-sDetail:hover{background:#ffcd4c;text-decoration:none}
+
+.load-recHotels-bx a p,
+.load-recHotels-descript{-moz-transition:all 0.3s ease-in-out;
+                         -ms-transition:all 0.3s ease-in-out;
+                         -webkit-transition:all 0.3s ease-in-out;
+                         -o-transition:all 0.3s ease-in-out;
+                         transition:all 0.3s ease-in-out;}
+
+.load-recHotels-bx s{font-style:normal;font-weight:normal;text-decoration:none;}
+.load-recHotels-bx a s{font-size:16px}
+.load-recHotels-descript a s{font-size:18px;}
+
+
+.load-recHotels-descript{
+    bottom:100%;
+}
+.load-recHotels-bx:hover .load-recHotels-descript{
+    bottom:0
+}
+.load-recHotels-bx:hover a p{bottom:-33px}
+
+
+/*国内热门游*/
+.load-mod .mod-r{float:right;width:286px;}
+.load-travel-bx a{text-decoration:none}
+.load-mod .load-travel h4 strong{background-image:url(../../images/you/travel.jpg)}
+.load-travel-bx{margin:8px 0 18px;padding:13px;border:1px solid #ccc;}
+.load-travel-bx .tit{color:#666}.load-travel-bx .tit:hover{color:#6BB5A7}
+.load-travel-bx .pic{position:relative;z-index:0;margin-top:10px;}
+.load-travel-bx .pic:hover{text-decoration:none}
+.load-travel-bx .pic img,.load-travel-bx .pic{display:block;width:258px;height:220px;}
+.load-travel-bx .pic p{position:absolute;right:0;bottom:0;left:0;z-index:1;width:100%;padding:8px 0;background:#000;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=65);background:rgba(0,0,0,0.5);color:#fff;font-size:12px;line-height:14px;}
+.load-travel-bx .pic del{margin:0 10px;color:#cbcbcb;}
+.load-travel-bx .pic span{float:right;padding-right:10px;color:#cbcbcb;}
+.load-travel-bx .pic ins{color:#fff;font-weight:bold;text-decoration:none}
+.load-travel-bx .pic b{font-weight:bold}
+
+.load-travel-bx .price{position:relative;z-index:0;overflow:hidden;padding:8px 12px;background:#6BB5A7;line-height:110%;;text-align:right;zoom:1}
+.load-travel-bx .load-sDetail{}
+.load-travel-bx .price span{position:absolute;bottom:8px;left:12px;z-index:1;*padding:6px 0;color:#fff;font-size:18px;font-family: Arial;zoom:1}
+.load-travel-bx .price b{margin-left:4px;font-size:32px}
+
+.load-slider .slider-item,.load-slider .slider-item img{width:980px}
+.load-slider2 .tab{background-position: 0 23px;}
+.load-slider2-tab1{margin-left:185px;}
+/*.tab-cont{width:968px;}*/
+.tab-cont .intro{width:280px}
+.load-mod .mod-l{width:658px}
+.load-news li p{width:440px;}

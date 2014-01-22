@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Configuration file for UrlRewriteFilter http://tuckey.org/urlrewrite/ -->
+<urlrewrite decode-using="null">
+
+	<!-- 帮5游首页 -->
+	<rule>
+		<note>帮5游</note>
+		<from>^/?(index)?/?$</from>
+		<to>/index.do?ajaxType=index</to>
+	</rule>
+	<rule>
+		<note>帮5游</note>
+		<from>^/city/([^_]*)/?$</from>
+		<to>/index.do?ajaxType=index&amp;ipLocate=$1</to>
+	</rule>
+
+	<rule>
+		<note>帮5游初始化分页</note>
+		<from>^/taoPage_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2</to>
+	</rule>
+	<rule>
+		<note>帮5游分页</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?ipLocate=$1&amp;ajaxType=$2&amp;currPageNo=$3&amp;pageMode=$4</to>
+	</rule>
+	
+	<rule>
+		<note>帮5游分页</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4&amp;pageMode=$5</to>
+	</rule>
+	<rule>
+		<note>帮5游分页(游记)</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4&amp;order=$5&amp;pageMode=$6</to>
+	</rule>
+	<rule>
+		<note>帮5游分页排序</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4&amp;order=$5&amp;pageSort=$6&amp;pageMode=$7</to>
+	</rule>
+	
+	<rule>
+		<note>帮5游分页排序(trip,添加筛选条件)</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4&amp;order=$5&amp;pageSort=$6&amp;type0=$7&amp;days=$8&amp;type1=$9&amp;priceStart=$10&amp;priceEnd=$11&amp;timeStart=$12&amp;timeEnd=$13&amp;pageMode=$14</to>
+	</rule>
+	
+	<rule>
+		<note>帮5游分页排序(hotel,添加筛选条件)</note>
+		<from>^/taoPage_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/taoPage.do?selectedCityId=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4&amp;order=$5&amp;pageSort=$6&amp;hotelPrice=$7&amp;hotelStar=$8&amp;pageMode=$9</to>
+	</rule>
+	
+	<rule>
+		<note>帮5游详情页</note>
+		<from>^/pageDetailed_([^_]+)_([^_]+)_([^_]+).html/?$</from>
+		<to>/pageDetailed.do?selectedCityId=$1&amp;pageType=$2&amp;clikcId=$3</to>
+	</rule>
+
+	<rule>
+		<note>帮5游着陆页</note>
+		<from>^/youGuideDetailed_([^_]*)_([^_]*).html/?$</from>
+		<to>/youGuideDetailed.do?ipLocate=$1&amp;clikcId=$2</to>
+	</rule>
+
+	<rule>
+		<note>帮5游查询结果页</note>
+		<from>^/search_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/search.do?ipLocate=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4</to>
+	</rule>
+	<rule>
+		<note>帮5游攻略查询结果页</note>
+		<from>^/notesList_([^_]*)_([^_]*)_([^_]*)_([^_]*)/?$</from>
+		<to>/notesList.do?ipLocate=$1&amp;ajaxType=$2&amp;keyWords=$3&amp;currPageNo=$4</to>
+	</rule>
+	<rule>
+		<note>帮5游攻略详情页</note>
+		<from>^/notesDetail_([^_]+)_([^_]+).html/?$</from>
+		<to>/notesDetail.do?ipLocate=$1&amp;clikcId=$2</to>
+	</rule>
+	<!-- <rule>
+		<note>siteMap</note>
+		<from>^/sitemap/([^_]+)/([^_]*).html/?$</from>
+		<to>/siteMap.do?siteMapType=$1&amp;ipLocate=$2</to>
+	</rule> -->
+	<rule>
+		<note>mapKeyWorkList</note>
+		<from>^/mapKeyWorkList.html/?$</from>
+		<to>/mapKeyWorkList.do</to>
+	</rule>
+	<rule>
+        <note>名品专题(模版篇)</note>
+        <from>^/huodong-([^_]*).html$</from>
+　　     <to>/famousTopics.do?btmSource=$1</to>
+    </rule>
+    <rule>
+        <note>more address</note>
+        <from>^/address.html$</from>
+　　     <to>/address.do?f=map</to>
+    </rule>
+    <rule>
+        <note>地图模式获取数据-ajax</note>
+        <from>^/getHotelsForMapByAjax.html$</from>
+　　     <to>/getHotelsForMapByAjax.do</to>
+    </rule>
+    <rule>
+        <note>地图模式获取数据-post</note>
+        <from>^/getHotelsForMap.html$</from>
+　　     <to>/getHotelsForMap.do</to>
+    </rule>
+    <rule>
+        <note>地图模式获取数据</note>
+        <from>^/hotelmap.html$</from>
+　　     <to>/hotelMap.do</to>
+    </rule>
+	<rule>
+		<note>test</note>
+		<from>^/search.html/?$</from>
+		<to>/search.do</to>
+	</rule>
+</urlrewrite>
