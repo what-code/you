@@ -1,1 +1,5 @@
+git 上传代码：
 http://lazynight.me/2898.html
+
+检查你的设置：
+git config --list
