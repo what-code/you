@@ -3,3 +3,17 @@ http://lazynight.me/2898.html
 
 检查你的设置：
 git config --list
+
+config file(/home/gsj/doc/git_hub/you/.git/config):
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	name=what-code
+	email=gsjt673@163.com
+[branch "master"]
+[remote "origin"]
+	url = https://github.com/what-code/you.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
